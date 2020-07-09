@@ -69,6 +69,7 @@ const ContentWrapper = styled.div`
   width: 45%;
   min-width: 300px;
   margin-top: 16px;
+  margin-bottom: 24px;
   border-radius: 3px;
   padding: 16px 16px;
   border: 4px solid #333333;
