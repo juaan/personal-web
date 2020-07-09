@@ -79,13 +79,15 @@ const ContentWrapper = styled.div`
 
 const AboutContent = "<ul><li>Anthony Juan Christian or you can call me <strong>Juan</strong>.</li><li>Bekasi based software developer. </li><li>Love doing uncommon stuff and explore something unique.  </li><li>Currently in love with Fashion, Plants, Games and Programming stuff, but kind of burn out with that too, because in this covid era, it seems like everybody launched their great personal project, meanwhile I was just focus on safe lane trying to carry my team <i>(NEeeeRrD detected)</i>.  </li><li>It's not like I didn't think about something, I had a super-mega-simple-mini project idea too, just wait me to finish it, it could be about fashion/plants/games/programming, the point is, I just want to make something useful too 😭</li></ul>"
 
+const SwearingContent = 'did you kiss your mom with that mouth? 😡 <br> <a target="_blank" href="https://www.sehatq.com/artikel/cara-berbicara-yang-baik-untuk-hasilkan-komunikasi-efektif">mulut mu kotor</a>';
+
 const AvaliableContent = {
   help: {
     content:
-      "available keyword: <strong>'help'</strong>, <strong>'contact'</strong>, <strong>'about juan'<strong/>, <strong>'cv'</strong> or just try it you might find something interesting 👀<br><br> <i>The 'I'm Feeling Lucky' button will lead you to unexpected content, curated by me, to show the button again, just enter empty keyword and the button will show up</i>",
+      "available keyword: <strong>'help'</strong>, <strong>'contact'</strong>, <strong>'about juan'<strong/>, <strong>'cv'</strong>, <string>'ping'</string> or just try it out, you might find something interesting 👀<br><br> <i>The 'I'm Feeling Lucky' button will lead you to unexpected content, curated with 💛 by me, to show the button again, just enter empty keyword and the button will show up</i>",
   },
   contact: {
-    content: '📭: anthonyjuan95@gmail.com<br> 📍: Bekasi <br> 🐦: <a href="https://twitter.com/juancuks">https://twitter.com/juancuks</a>'
+    content: '📭: anthonyjuan95@gmail.com<br> 📍: Bekasi <br> 🐦: <a target="_blank" href="https://twitter.com/juancuks">https://twitter.com/juancuks</a>'
   },
   notfound: {
     content: 'keyword not found',
@@ -100,20 +102,39 @@ const AvaliableContent = {
     content: AboutContent
   },
   anjing: {
-    content: "did you kiss your mom with that mouth? 😡"
+    content: SwearingContent
   },
   ping: {
-    content: "<strong>pong 🏓!</strong>"
+    content: "<strong>pong 🏓</strong>"
+  },
+  kontol: {
+    content: SwearingContent
+  },
+  bangsat: {
+    content: SwearingContent
+  },
+  fuck: {
+    content: SwearingContent
+  },
+  bitch: {
+    content: SwearingContent
+  },
+  cv: {
+    content: "<a href='../juan-cv.pdf' download><button>stomp me !</button></a> and the desired file will be in your download directory in blink of an eye"
+  },
+  'i love you': {
+    content: "Thank you 🥰"
   }
 };
 
 const MainContent = () => {
   const [searchResult, setSearchResult] = useState(null);
 
-  const setSearchKeyword = (value) => {
-    if (value in AvaliableContent) {
-      setSearchResult(AvaliableContent[value]);
-    } else if (!value) {
+  const setSearchKeyword = (value = '') => {
+    const lowerCaseValue = value.toLocaleLowerCase()
+    if (lowerCaseValue in AvaliableContent) {
+      setSearchResult(AvaliableContent[lowerCaseValue]);
+    } else if (!lowerCaseValue) {
       setSearchResult(null);
     } else {
       setSearchResult(AvaliableContent.notfound);
