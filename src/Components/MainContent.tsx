@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useCallback } from "react";
 import styled from "styled-components";
 import { Typography, Button } from "antd";
 import ReactHtmlParser from "react-html-parser";
@@ -77,14 +77,34 @@ const ContentWrapper = styled.div`
   color: ghostwhite;
 `;
 
+const AboutContent = "<ul><li>Anthony Juan Christian or you can call me <strong>Juan</strong>.</li><li>Bekasi based software developer. </li><li>Love doing uncommon stuff and explore something unique.  </li><li>Currently in love with Fashion, Plants, Games and Programming stuff, but kind of burn out with that too, because in this covid era, it seems like everybody launched their great personal project, meanwhile I was just focus on safe lane trying to carry my team <i>(NEeeeRrD detected)</i>.  </li><li>It's not like I didn't think about something, I had a super-mega-simple-mini project idea too, just wait me to finish it, it could be about fashion/plants/games/programming, the point is, I just want to make something useful too 😭</li></ul>"
+
 const AvaliableContent = {
   help: {
     content:
-      'available keyword: <strong>"help"</strong>, <strong>"contact"</strong>, <strong>"about juan"<strong/> or <strong>"cv"</strong>',
+      "available keyword: <strong>'help'</strong>, <strong>'contact'</strong>, <strong>'about juan'<strong/>, <strong>'cv'</strong> or just try it you might find something interesting 👀<br><br> <i>The 'I'm Feeling Lucky' button will lead you to unexpected content, curated by me, to show the button again, just enter empty keyword and the button will show up</i>",
+  },
+  contact: {
+    content: '📭: anthonyjuan95@gmail.com<br> 📍: Bekasi <br> 🐦: <a href="https://twitter.com/juancuks">https://twitter.com/juancuks</a>'
   },
   notfound: {
-    content: "keyword not found",
+    content: 'keyword not found',
   },
+  about: {
+    content: AboutContent
+  },
+  'about juan': {
+    content: AboutContent
+  },
+  juan: {
+    content: AboutContent
+  },
+  anjing: {
+    content: "did you kiss your mom with that mouth? 😡"
+  },
+  ping: {
+    content: "<strong>pong 🏓!</strong>"
+  }
 };
 
 const MainContent = () => {
@@ -100,6 +120,10 @@ const MainContent = () => {
     }
   };
 
+  const handleButtonClicked = useCallback(() => {
+    const newPageUrl = "https://youtu.be/ZWibJrqY8R0";
+    window.open(newPageUrl, "_blank")
+  }, [])
   return (
     <Wrapper>
       <ImageWrapper>
@@ -111,7 +135,7 @@ const MainContent = () => {
         <ContentWrapper>{ReactHtmlParser(searchResult.content)}</ContentWrapper>
       ) : (
         <ButtonWrapper>
-          <Button size="large">
+          <Button size="large" onClick={handleButtonClicked}>
             <ButtonText>I'm Feeling Lucky</ButtonText>
           </Button>
         </ButtonWrapper>
