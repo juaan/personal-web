@@ -1,0 +1,151 @@
+
+*{
+	margin: 0;
+
+}
+
+body {
+	background-color: #e67e22;
+	font-family: 'Bree Serif',sans-serif;
+}
+
+#logo{
+	font-family: 'Pacifico', cursive;
+    font-size: 28px;
+}
+
+a {
+	text-decoration: none;
+	color: black;
+}
+
+header{
+	background-color: white;
+	width: 100%;
+	position: fixed;
+}
+
+nav{
+	text-align: center;
+}
+
+.list:hover {
+	color: grey;
+	border-bottom: 1px solid grey;
+}
+
+nav p{
+	display: inline-block;
+	padding: 15px 30px;
+}
+
+section {
+	width: 80%;
+	height: auto;
+	/*border: 1px solid #ccc;*/
+	padding-top: 100px;
+	margin: 0 auto;
+	text-align: center;
+}
+
+#welcome-note {
+	transition: opacity 0.5s ease-in-out;
+    -moz-transition: opacity 0.5s ease-in-out;
+    -webkit-transition: opacity 0.5s ease-in-out;
+	width: 80%;
+	/*border: 1px solid #ccc;*/
+	margin: 0 auto;
+}
+
+#welcome2 {
+	opacity: 0;
+	transition: opacity 0.5s ease-in-out;
+    -moz-transition: opacity 0.5s ease-in-out;
+    -webkit-transition: opacity 0.5s ease-in-out;
+
+}
+
+
+#button-start {
+	background-color: #2980b9;
+	border: none;
+	padding: 5px 5px;
+	border-radius: 5px;
+	color: white;
+	width: 200px;
+	margin-bottom: 200px;
+}
+
+#button-start:hover {
+	background-color: #3498db;
+	transition: 0.5s;
+}
+
+#arena {
+	width: 800px;
+	height: 250px;
+	/*border: 1px solid black;*/
+	margin: 0 auto;
+	display: none;
+	padding: 10px 10px;
+}
+
+
+#user-selection {
+	width: 300px;
+	height: auto;
+	float: left;
+}
+
+#computer-selection {
+	width: 300px;
+	height: auto;
+	float: left;
+}
+
+#versus {
+	width: 200px;
+	height: 200px;
+	float: left;
+
+}
+
+#option {
+
+	transition: opacity 1s ease-in-out;
+    -moz-transition: opacity 1s ease-in-out;
+    -webkit-transition: opacity 1s ease-in-out;
+	/*border: 1px solid black;*/
+	overflow: hidden;
+	width: 620px;
+
+	padding: 10px 10px;
+	margin: 0 auto;
+	opacity: 0;
+
+}
+.select-option {
+	height: 200px;
+	width: 150px;
+	/*border: 1px solid black;*/
+	float: left;
+}
+.score {
+	text-align: left;
+	border: 1px solid black;
+	padding-left: 10px;
+}
+
+.select-option img{
+	margin: 0 auto;
+	height: 150px;
+	width: 120px;
+	/*border: 1px solid black;*/
+
+}
+
+.select-option img:hover {
+	-ms-transform: rotate(-20deg); /* IE 9 */
+    -webkit-transform: rotate(-20deg); /* Chrome, Safari, Opera */
+    transform: rotate(-20deg);
+}
