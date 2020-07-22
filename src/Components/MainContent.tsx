@@ -88,7 +88,7 @@ const AvaliableContent = {
       "available keyword: <strong>'help'</strong>, <strong>'contact'</strong>, <strong>'about juan'<strong/>, <strong>'cv'</strong>, <string>'ping'</string> or just try it out, you might find something interesting 👀<br><br> <i>The 'I'm Feeling Lucky' button will lead you to unexpected content, curated with 💛 by me, to show the button again, just enter empty keyword and the button will show up</i>",
   },
   contact: {
-    content: '📭: anthonyjuan95@gmail.com<br> 📍: Bekasi <br> 🐦: <a target="_blank" href="https://twitter.com/juancuks">https://twitter.com/juancuks</a>'
+    content: '📭: anthonyjuan95@gmail.com<br> 📍: Bekasi <br> 🐦: <a target="_blank" href="https://twitter.com/juancuks">https://twitter.com/juancuks</a> <br> 🖥: <a target="_blank" href="https://github.com/anthonyjuan">https://github.com/anthonyjuan</a>'
   },
   notfound: {
     content: 'keyword not found',
