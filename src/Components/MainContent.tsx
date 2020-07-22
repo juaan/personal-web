@@ -78,7 +78,7 @@ const ContentWrapper = styled.div`
   color: ghostwhite;
 `;
 
-const AboutContent = "<ul><li>Anthony Juan Christian or you can call me <strong>Juan</strong>.</li><li>Bekasi based software developer. </li><li>Love doing uncommon stuff and explore something unique.  </li><li>Currently in love with Fashion, Plants, Games and Programming stuff, but kind of burn out with that too, because in this covid era, it seems like everybody launched their great personal project, meanwhile I was just focus on safe lane trying to carry my team <i>(NEeeeRrD detected)</i>.  </li><li>It's not like I didn't think about something, I had a super-mega-simple-mini project idea too, just wait me to finish it, it could be about fashion/plants/games/programming, the point is, I just want to make something useful too 😭</li></ul>"
+const AboutContent = "<ul><li>Hello, my name is Anthony Juan Christian or you can call me <strong>Juan</strong>.</li><li>Currently working remotely as  a Software Developer</li><li>I Love doing uncommon stuff and explore something unique.  </li><li>Passionate in Fashion, Plants, Games and Programming stuff, but kind of burn out with that too, idk... love hate relationship I guess 🤨.  </li><li>day by day always thinking about making something useful but somehow got distracted by works, games, or manga. I need to fix this 😭.</li></ul>"
 
 const SwearingContent = 'did you kiss your mom with that mouth? 😡 <br> <a target="_blank" href="https://www.sehatq.com/artikel/cara-berbicara-yang-baik-untuk-hasilkan-komunikasi-efektif">mulut mu kotor</a>';
 
