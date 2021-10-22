@@ -88,12 +88,15 @@ const AvaliableContent = {
       "available keyword: <strong>'help'</strong>, <strong>'contact'</strong>, <strong>'about juan'<strong/>, <strong>'cv'</strong>, <string>'ping'</string> or just try it out, you might find something interesting 👀<br><br> <i>The 'I'm Feeling Lucky' button will lead you to unexpected content, curated with 💛 by me, to show the button again, just enter empty keyword and the button will show up</i>",
   },
   contact: {
-    content: '📭: anthonyjuan95@gmail.com<br> 📍: Bekasi <br> 🐦: <a target="_blank" href="https://twitter.com/juancuks">https://twitter.com/juancuks</a> <br> 🖥: <a target="_blank" href="https://github.com/anthonyjuan">https://github.com/anthonyjuan</a>'
+    content: '📭: anthonyjuan95@gmail.com<br> 📍: Bekasi <br> 🐦: <a target="_blank" href="https://twitter.com/juancuks">https://twitter.com/juancuks</a> <br> 🖥: <a target="_blank" href="https://github.com/juaan">github.com/juaan</a>'
   },
   notfound: {
     content: 'keyword not found',
   },
   about: {
+    content: AboutContent
+  },
+  'about me': {
     content: AboutContent
   },
   'about juan': {
@@ -143,8 +146,16 @@ const MainContent = () => {
   };
 
   const handleButtonClicked = useCallback(() => {
-    const newPageUrl = "https://youtu.be/ZWibJrqY8R0";
-    window.open(newPageUrl, "_blank")
+    const youtubeList = [
+      "https://youtu.be/ZWibJrqY8R0",
+      "https://youtu.be/-h5WrWncDZw",
+      "https://youtu.be/JXeJANDKwDc",
+      "https://youtu.be/115amzVdV44",
+      "https://youtu.be/V1bFr2SWP1I"
+    ]
+
+    const theRandomNumber = Math.floor(Math.random() * 5);
+    window.open(youtubeList[theRandomNumber], "_blank")
   }, [])
   return (
     <Wrapper>
