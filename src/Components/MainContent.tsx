@@ -124,7 +124,7 @@ const AvaliableContent = {
     content: SwearingContent
   },
   cv: {
-    content: "<a href='/juan-cv.pdf' download>click me!</a> and the desired file will be in your download directory in blink of an eye"
+    content: "<a href='/juan-cv.pdf' download>click me!</a>"
   },
   'i love you': {
     content: "Thank you 🥰"
